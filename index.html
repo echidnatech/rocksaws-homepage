@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bzaz.au</title>
+    <style>
+      body {
+        font-family: monospace;
+        padding: 1.5rem;
+      }
+
+      html,
+      body {
+        color-scheme: light dark;
+      }
+      #ip {
+        font-weight: bold;
+        opacity: 0.6;
+      }
+
+      #ip.real {
+        color: #00aac4;
+        color: light-dark(
+          oklch(67.84% 0.119 213.67),
+          oklch(75.23% 0.119 213.67)
+        );
+        opacity: 1;
+      }
+
+      body * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @media all and (max-width: 400px) {
+        body {
+          writing-mode: vertical-rl;
+        }
+      }
+      .hidden {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      hello <span id="ip"><span class="pending">...</span></span>
+    </div>
+    <br />
+    <div class="hidden">from bzaz.au</div>
+    <div class="hidden">
+      - proudly hosted by a 10 year old mini pc on top of my fridge
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
