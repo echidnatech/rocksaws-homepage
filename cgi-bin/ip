@@ -3,4 +3,4 @@ echo "Content-Type: text/plain; charset=utf-8"
 echo "Cache-Control: no-store"
 echo ""
 
-echo ${HTTP_X_ENVOY_EXTERNAL_ADDRESS:-$REMOTE_ADDR}
+echo ${HTTP_CF_CONNECTING_IP:-$REMOTE_ADDR}

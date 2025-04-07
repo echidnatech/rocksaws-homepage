@@ -3,6 +3,6 @@ echo "Content-Type: text/plain; charset=utf-8"
 echo "Cache-Control: no-store"
 echo ""
 
-IP=${HTTP_X_ENVOY_EXTERNAL_ADDRESS:-$REMOTE_ADDR}
+IP=${HTTP_CF_CONNECTING_IP:-$REMOTE_ADDR}
 HOST=$(dig -x "$IP" +short)
 echo ${HOST:-$IP}
