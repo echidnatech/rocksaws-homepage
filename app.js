@@ -1,3 +1,5 @@
+document.querySelector("#domainname").outerHTML = location.hostname;
+
 const target = document.querySelector("#ip");
 const steps = document.querySelectorAll(".hidden");
 
